@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --sun-orange: #f38235;
+  --white: #fff;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Lexend", sans-serif;
+  color: var(--white);
+}
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+.text {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  height: 100vh;
+  width: 100vw;
+}
+.text h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 6vw;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--sun-orange);
+}
